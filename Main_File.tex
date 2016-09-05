@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% ENB345 PROJECT PROPOSAL
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+
+\include{macro/Style}
+\include{macro/use_packages}
+
+\begin{document}
+\include{frontmatter/title}
+\input frontmatter/fm2
+
+\include{Chapters/MainSection}
+\include{Chapters/Methodology}
+\include{Chapters/Conclusion}
+
+%%\nocite{•}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIBLIOGRAPHY
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{ieeetr}
+\bibliography{Bibliography.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% APPENDIX
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\afterpage{% Insert after the current page
+\clearpage
+\KOMAoptions{paper=A4,paper=landscape,pagesize}
+\recalctypearea
+\includepdf[scale=0.85,pages=1,pagecommand=\section*{Appendix 1: Project Gantt Chart - Page 1}]{images/Gantt_Rev1.pdf}
+}
+\afterpage{% Insert after the current page
+\clearpage
+\KOMAoptions{paper=A4,paper=landscape,pagesize}
+\recalctypearea
+\includepdf[scale=0.85,pages=2,pagecommand=\section*{Appendix 1: Project Gantt Chart - Page 2}]{images/Gantt_Rev1.pdf}
+}
+\end{document}

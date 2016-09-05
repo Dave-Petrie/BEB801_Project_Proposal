@@ -1,0 +1,37 @@
+% Headers and footers for thesis
+\usepackage{fancyhdr}
+
+%\usepackage[margin=0.5in]{geometry}
+
+\usepackage{setspace}
+\onehalfspacing
+%\doublespacing
+
+
+% Headers and footers for thesis
+%\markboth{}{}
+%\newcommand\startchapter[1]{\chapter{#1}\thispagestyle{myheadings}}
+%\newcommand\startappendix[1]{\chapter{#1}\thispagestyle{myheadings}}
+%\newcommand\startfirstchapter[1]{\chapter{#1}}
+
+
+% Manual addition of section to Table of Contents
+%\newcommand\TOCadd[1]{\newpage\phantomsection\addcontentsline{toc}{chapter}{#1}}
+
+% Float Customization
+\renewcommand{\floatpagefraction}{0.01}
+\usepackage{float}
+
+% Customization of Tables of Contents and List of Figures/Tables
+\usepackage{tocloft}
+\renewcommand\cfttabpresnum{Table\ }
+\renewcommand\cfttabnumwidth{0.75in}
+\renewcommand\cftfigpresnum{Figure\ }
+\renewcommand\cftfignumwidth{0.80in}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+%%Title modifications
+%\usepackage{etoolbox}
+%\makeatother
+%\patchcmd{\@makechapterhead}{\vspace*{50pt}}{\vspace*{20pt}}{}{}
+%\makeatother
